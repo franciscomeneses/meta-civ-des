@@ -1,5 +1,5 @@
 ---
-title: "Clase de ciencia abierta: Datos abiertos"
+title: "Metaanalisis"
 subtitle: " "
 author: ""
 date: " "
@@ -22,15 +22,15 @@ class: inverse, bottom, right
 ```{r, include=FALSE,echo=FALSE,results='hide'}
 #install.packages("pagedown")
 #library(pagedown)
-pagedown::chrome_print("Presentacion.html")
+#pagedown::chrome_print("Presentacion.html")
 
-remotes::install_github("jhelvy/xaringanBuilder")
-remotes::install_github('rstudio/chromote')
+#remotes::install_github("jhelvy/xaringanBuilder")
+#remotes::install_github('rstudio/chromote')
 
 
-library(xaringanBuilder)
+#library(xaringanBuilder)
 
-build_pdf("Presentacion.html")
+#build_pdf("Presentacion.html")
           
 #xaringan :: inf_mr ()
 #xaringan::summon_remark()
@@ -55,9 +55,8 @@ About macros.js: permite escalar las imágenes como [:scale 50%](path to image),
 
 --->
 
-# __Estimando la desigualdad en educación cívica:__
-# El efecto los recursos culturales de la familia en las habilidades para la ciudadania
-## *Metanálisis en torno al Estudio internacional de educación cívica y ciudadana ICCS *
+# __¿La desigualdad corroe la participación democrática?:__
+## Metaanálisis del Efecto de la desigualdad socioeconómica en la desigualdad política.
 <br>
 <hr>
 
@@ -93,15 +92,15 @@ class: inverse, middle, center, slideInRight
 ---
 ## Variables y relaciones (Cooper, 2017)
 
- .pull-left[<br>__Conocimiento cívico__: el conocimiento de principios democráticos así como las habilidades para aplicar estos conocimientos en la vida ciudadana.]
+ .pull-left[<br>__Desigualdad política__: Desigual probabilidad de participación y/o de ser escuchado, según nivel socioecnomico]
 
-.pull-left[__Recursos culturales__: 
-recursos materiales y cognitivos asociados a un alto nivel educativo, tales como el gusto y la tenencia de libros o la poseción de titulos universitarios]
+.pull-left[__Desigualdad economica__: 
+desigual poseción de bienes que influye en las vivencias estratificadas de las personas.]
 
-.center[__Reproducción intergeneracional__: <br>refiere a la continua reproducción de la desigualdad politica desde una generación a otra, mediante la socializaicón familiar]
+.center[__Desigualdad en la voz politica__: <br> Refiere al efecto de la desigualdad socail en la desigualdad politica]
 
 
-.center[![70%](modelo.png)]
+.center[![70%](Modelo.png)]
  
 ???
 
@@ -110,15 +109,14 @@ Aqui, según cooper señala necesario, se especifican claramente las variable y 
 
 ---
 
-.center[![](input/anexos/Pregunta-liberada1.png)]
----
-
 ## Objetivos de investigación
  
  
-__Objetivo general:__ <br> Identificar cual es el tamaño de efecto integrado sobre la relación entre recursos familiares y las habilidades para la vida cívica y ciudadana
- 
+__Objetivo general:__ <br> Identificar la existencia o la inexistencia de un efecto negativo de la desigualdad social en la igualdad politica. 
 
+
+ 
+* Se reguistro la hipótesis general y una hipotesis de moderación en la plataforma OSF: [Pre-registration](https://osf.io/tkhea)
 
 .pull-right[
 
@@ -133,13 +131,10 @@ __Objetivo general:__ <br> Identificar cual es el tamaño de efecto integrado so
 ---
 # Posibles moderadores: Explicando las diferencias entre estudios
 
-A modo general, se hipotetíza que la fuerza del efecto puede variar entre países dependiendo del nivel de desigualdad que exista en educación. 
+A modo general, se hipotetíza que la fuerza del efecto sera mayor cuando se tenga una mayor muestra de paieses, pues se tendra una muestra mas representativa de la desigualdad mundial. 
 
- * __Indice GINI__
- 
- * __%PIB Invertido en educación__
- 
-También se propone que el efecto dependerá de la calidad de la medición. 
+ * Cantidad de países en el estudio
+
  
 ???
 Quizas seria interesante controlarlo directamente por desigualdad en la educación, pero no se como operacionalizar algo asi.
@@ -152,77 +147,144 @@ class: inverse, middle, center, slideInRight
 # Codigo de busqueda
 
 .pull-left[
-__Tesauros de referencia__
+__Tesauro de referencia__
 
-* [UNESCO Thesaurus](http://vocabularies.unesco.org/browser/thesaurus/en/) 
-* [CESSDA Thesauri](https://thesauri.cessda.eu/en/)
-* [ERIC thesaurus](https://eric.ed.gov/)
+* [ELSST Thesaurus](https://elsst.cessda.eu/id/2005dd1d-819c-4329-93cd-b67baad666a1) 
+
+* Plataforma de bÚsqueda WOS
 
 ]
+
 
 .pull-right[
 ![](resauro.png)        
 ]
 
-
+.small[
 .center[
 __operador booleano__ 
 
-("Civic Knowledge" [OR]() "Civic Education" [OR]() "Political education" [OR]() "Political skills") 
-[AND]()
-
-( "Social class"[OR]() "Cultural capital" [OR]() "Educational levels" [OR]() "Cultural resources" [AND]()
-
-
-(gap [OR]() Breach [OR]() Inequality)
+> AB=("political inequality") OR AB=("political gap")  OR AB=("political participation")  OR AB=("PARTICIPATION IN POLITICS")  OR AB=( "POLITICAL CAMPAIGNS" ) OR AB=( "POLITICAL CAMPAIGNS" ) OR AB=("POLITICAL PROTEST")  OR AB=("VOTING") )  AND ( AB=(Inequality) OR AB=(GINI) OR   AB="Social Inequality" OR   AB="Social equality") AND (ALL=("countries") OR  ALL=("country") OR ALL="states")  NOT (AB=("gender") OR AB=("women")  OR  AB=("Young") OR AB=("race"))
 
 ]
-
-
-???
-
-Quizas es un codigo muy escueto, me gustaria discutirlo
-
-como justifico sacar o menter uno si no esta en un tesauro
-
-
-
-¿Como puedo incorporar un termino de un tesauro con muchos sinónimos en otros idiomas? [Tesauro-civic-education](https://thesauri.cessda.eu/elsst/en/page/?uri=https%3A%2F%2Felsst.cessda.eu%2Fid%2F974dcf69-b332-4a20-a092-af54125168ba)
-
----
-(ALL=("civic knowledge") OR ALL=("Civic Education") OR ALL=("political education")) AND (ALL=("Social class") OR ALL=("Cultural capital") OR ALL=("Educational levels") OR ALL=("Cultural resources")) AND (ALL=(Inequality) OR ALL=(gap))
+]
 
 ---
 
 # Criterios de clasificación:
 
-* empirico y métodos cuantitativos
+*	Criterios
+  +	Utiliza inferencia
+  +	Tiene país como unidad
+  +	Tiene las variables dependiente e independiente
+  +	 Tiene los controles adecuados. 
 
-* Utiliza conocimiento cívico como dependiente
 
-* Utiliza recursos como independiente o control
-
-* ~~Utiliza el estudio ICCS~~
-
-* Utiliza ICCS
+![](images/Muestra.png)
 
 ???
 
-¿Cúal otro podria ser bueno? lo necesito por que tengo muchos resultados
+¿Cúal otro podría ser bueno? lo necesito por que tengo muchos resultados
 
 ---
 
+# Cantidad y cualificación de los codificadores.
 
-# Busqueda en wos
+*  Actualmente solo se cuenta con un codificador, el cual posee master en Ciencias Sociales
 
-*  Primera búsqueda 
+*  En una segunda etapa de este estudio se incluirá codificadores, que serás estudiantes de los últimos años de sociología.
+
+  + Para facilitar la codificación y la consolidación de los datos se ha generado un protocolo de codigicación que esta disponible en formato encuesta online en google forms. 
+  
+  + [Protocolo de codificación Form](https://docs.google.com/forms/d/e/1FAIpQLSe4IEgts63hDZ7H5t6zTb8aKxXyg_vlWcJB3nGks9KBPuXZAQ/viewform?usp=sf_link)
+  
+  + Evaluación de consistencia 
+---
+
+
+# Cantidad de documentos encontrados
+
+*  Para ordenar la selección de los documentos se utilizo la plataforma Zotero y se genero una biblioteca publica: [Metanalisis desigualdad politico-economica](https://www.zotero.org/groups/4470212/inequalitysocialpolitical/library)
 
 ![](Primera busqueda.png)
 
-???
-
-¿Hay alguna forma de automatizar la selección? no quiero leer tanto...
-
-se me ocurre meter a e y seleccionar si tiene determinada palabra en el resumen
 
 ---
+class: slideInRight, middle, inverse
+
+***
+# __Metodología__: Metodo de sintesis...
+***
+
+---
+
+# Metodo de sintesis:
+
+* Alternativas [Se aplicaran en el futuro]
+
+  + Peterson y Brown
+  + Philip, Huy, In-Sue e Inddekinge, 2017
+  
+* Método aplicado 
+  
+  + [Richardson et al. 2020](https://link.springer.com/article/10.1007/s00411-020-00863-w)
+  + [Paquete Metaan](https://github.com/Package-Metaan-Rep/Metaan)
+
+
+
+---
+
+# Resultados 
+
+### Aproximación descriptiva
+
+![](images/Diapositiva3.PNG)
+---
+
+# Resultados 
+
+```{r, echo=FALSE}
+
+library(Metaan)
+
+study <- c("Somma & Bargsted (2018)", "Cole (2018) A", "Cole (2018) B", "Houle. (2018) A","Houle. (2018) B","Houle. (2018) C")
+
+beta<- c(0.101, -0.023, -0.032, -0.167,-0.0537, -0.0391)
+lower_ci <- c(0.289, -0.016, -0.025, -0.1822,   -0.06305, -0.04347)
+  upper_ci <- c(-0.087, -0.030,-0.039,-0.1518, -0.04435,-0.0347)
+
+donne <- data.frame(cbind(study, beta, lower_ci, upper_ci))
+
+donne$beta <- as.numeric(as.character(donne$beta))
+donne$upper_ci <- as.numeric(as.character(donne$upper_ci))
+donne$lower_ci <- as.numeric(as.character(donne$lower_ci))
+
+
+estmeta(Beta=donne$beta, u=donne$upper_ci, l=donne$lower_ci, test="FIXED")
+```
+
+---   
+
+# Conclusiones y discuciones
+
+* Se evaluo distintos articulos para comprobar si la desigualdad economica corroe la igualdad politica
+
+* Los resultados actuales apuntan en la dirección esperada, de modo tal que se puede afirmar la existencia de un efecto negativo.
+
+* No obstante el efecto es más bien pequeño, por lo que es necesario comprender que puede moderar este efecto. 
+
+---
+
+# Limitaciones:
+
+* Faltan estudios
+
+* Hacer modelo anidado para los mismos estudios
+
+* Incluir calculo de tamaño de efecto
+
+* Inlcuir co-codificadores. 
+
+* Preparar pauta de codificación y protocolo en google forms.
+
+
