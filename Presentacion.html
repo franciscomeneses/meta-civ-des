@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Clase de ciencia abierta: Datos abiertos</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="" />
+    <link rel="stylesheet" href="xaringan_custom/xaringan-themer.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+class: inverse, bottom, right
+
+
+
+
+
+
+
+
+&lt;!---
+About macros.js: permite escalar las imágenes como [:scale 50%](path to image), hay si que grabar ese archivo js en el directorio.
+.pull-left[&lt;images/Conocimiento cívico.png&gt;] 
+.pull-right[&lt;images/Conocimiento cívico_graf.png&gt;]
+
+---&gt;
+
+# __Estimando la desigualdad en educación cívica:__
+# El efecto los recursos culturales de la familia en las habilidades para la ciudadania
+## *Metanálisis en torno al Estudio internacional de educación cívica y ciudadana ICCS *
+&lt;br&gt;
+&lt;hr&gt;
+
+
+### Francisco Meneses Rivas, *Universidad de Chile*
+
+&lt;br&gt;
+
+.small[]
+
+???
+ 
+Esto busca reforzar lo que es una base para la propuesta de mi tesis 
+
+---
+
+layout: true
+class: animated, fadeIn
+
+
+---
+class: inverse, middle, center, slideInRight
+
+# Breve reflexión sobre metanalisis en sociologia
+
+???
+me costo elegir un tema dado que la sociologia es menos sistematica en la forma de medir algo o de evaluar causalidad.
+
+---
+class: inverse, middle, center, slideInRight
+
+# Plantiento del problmea
+---
+## Variables y relaciones (Cooper, 2017)
+
+ .pull-left[&lt;br&gt;__Conocimiento cívico__: el conocimiento de principios democráticos así como las habilidades para aplicar estos conocimientos en la vida ciudadana.]
+
+.pull-left[__Recursos culturales__: 
+recursos materiales y cognitivos asociados a un alto nivel educativo, tales como el gusto y la tenencia de libros o la poseción de titulos universitarios]
+
+.center[__Reproducción intergeneracional__: &lt;br&gt;refiere a la continua reproducción de la desigualdad politica desde una generación a otra, mediante la socializaicón familiar]
+
+
+.center[![70%](modelo.png)]
+ 
+???
+
+Aqui, según cooper señala necesario, se especifican claramente las variable y las relaciones.
+
+
+---
+
+.center[![](input/anexos/Pregunta-liberada1.png)]
+---
+
+## Objetivos de investigación
+ 
+ 
+__Objetivo general:__ &lt;br&gt; Identificar cual es el tamaño de efecto integrado sobre la relación entre recursos familiares y las habilidades para la vida cívica y ciudadana
+ 
+
+
+.pull-right[
+
+![](ciudadania.jfif)        
+]
+
+???
+¿Sera problema centrarme en estudios basados en la misma encuesta? la iccss que tiene artas olas en varios paises 
+
+ 
+
+---
+# Posibles moderadores: Explicando las diferencias entre estudios
+
+A modo general, se hipotetíza que la fuerza del efecto puede variar entre países dependiendo del nivel de desigualdad que exista en educación. 
+
+ * __Indice GINI__
+ 
+ * __%PIB Invertido en educación__
+ 
+También se propone que el efecto dependerá de la calidad de la medición. 
+ 
+???
+Quizas seria interesante controlarlo directamente por desigualdad en la educación, pero no se como operacionalizar algo asi.
+---
+class: inverse, middle, center, slideInRight
+
+# Diseño y planificación de busqueda
+---
+
+# Codigo de busqueda
+
+.pull-left[
+__Tesauros de referencia__
+
+* [UNESCO Thesaurus](http://vocabularies.unesco.org/browser/thesaurus/en/) 
+* [CESSDA Thesauri](https://thesauri.cessda.eu/en/)
+* [ERIC thesaurus](https://eric.ed.gov/)
+
+]
+
+.pull-right[
+![](resauro.png)        
+]
+
+
+.center[
+__operador booleano__ 
+
+("Civic Knowledge" [OR]() "Civic Education" [OR]() "Political education" [OR]() "Political skills") 
+[AND]()
+
+( "Social class"[OR]() "Cultural capital" [OR]() "Educational levels" [OR]() "Cultural resources" [AND]()
+
+
+(gap [OR]() Breach [OR]() Inequality)
+
+]
+
+
+???
+
+Quizas es un codigo muy escueto, me gustaria discutirlo
+
+como justifico sacar o menter uno si no esta en un tesauro
+
+
+
+¿Como puedo incorporar un termino de un tesauro con muchos sinónimos en otros idiomas? [Tesauro-civic-education](https://thesauri.cessda.eu/elsst/en/page/?uri=https%3A%2F%2Felsst.cessda.eu%2Fid%2F974dcf69-b332-4a20-a092-af54125168ba)
+
+---
+(ALL=("civic knowledge") OR ALL=("Civic Education") OR ALL=("political education")) AND (ALL=("Social class") OR ALL=("Cultural capital") OR ALL=("Educational levels") OR ALL=("Cultural resources")) AND (ALL=(Inequality) OR ALL=(gap))
+
+---
+
+# Criterios de clasificación:
+
+* empirico y métodos cuantitativos
+
+* Utiliza conocimiento cívico como dependiente
+
+* Utiliza recursos como independiente o control
+
+* ~~Utiliza el estudio ICCS~~
+
+* Utiliza ICCS
+
+???
+
+¿Cúal otro podria ser bueno? lo necesito por que tengo muchos resultados
+
+---
+
+
+# Busqueda en wos
+
+*  Primera búsqueda 
+
+![](Primera busqueda.png)
+
+???
+
+¿Hay alguna forma de automatizar la selección? no quiero leer tanto...
+
+se me ocurre meter a e y seleccionar si tiene determinada palabra en el resumen
+
+---
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="libs/remark-latest.min.js"></script>
+<script src="macros.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

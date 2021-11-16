@@ -1,0 +1,20 @@
+name: "meritredist2019"
+output_dir: "." # Esto es para que se compile en el rootdir
+navbar:
+  title: "Metanalisis:desigualdad economica y politica"
+  right:
+    - text: "Calculo Metaanalisis"
+      href: "prod_analisis.html"
+    - text: "Artículo en línea"
+      href: "paper.html"
+    - text: "Presentación"
+      href: "../Presentacion.html"
+    - text: ""
+      icon: fa-github fa-lg
+      href: https://github.com/franciscomeneses/Seminario
+
+
+output:
+  html_document:
+    css: "../input/css/custom.css"
+    theme: united

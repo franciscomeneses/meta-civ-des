@@ -1,0 +1,41 @@
+---
+title: "¿La desigualdad corroe la participación democrática?"
+subtitle: "Metaanálisis del Efecto de la desigualdad socioeconómica en la desigualdad política."
+csl: "../input/bib/apa6.csl"
+bibliography: "../input/bib/zlibrary.bib"
+author: " "
+output:
+    html_document:
+        smart: false
+        includes:
+          in_header: head_github-activity.html
+---
+<div style="text-align: justify">
+
+# Resumen: 
+
+La legitimidad de la democracia proviene de la participación universal, no obstante, las democracias actuales presentan problemas de participación, y peor aún, problemas de desigualdad en la participación. Autores como Garreton, han señalado que la desigualdad puede corroer las democracias, no obstante, ¿Existe la evidencia suficiente para afirmar que la desigualdad social afecta la participación política haciéndola más desigual? Para responder dicha incógnita el presente estudio realiza un metaanálisis que busque consolidar las distintas evidencias al respecto, para poder determinar la existencia o inexistencia de esta relación. Para ello se ha formulado un código de búsqueda basado en términos del tesauro ELSST, que ha sido aplicado a la plataforma WOS, permitiendo acceder a 181 textos, de los cuales se seleccionaron los 5 cálculos que estudian la relación entre la desigualdad social y la desigualdad política a nivel país, controlando por la riqueza del país. Se utilizo la propuesta de Roberson 2018 para la síntesis de los beta y sus respectivos intervalos de confianza. Para ello se recurrió al paquete Metaan disponible para el software de análisis R en su versión 4.1.1. En general los resultados indican que existe un efecto negativo de la desigualdad económica en la igualdad política, efecto agregado que es significativo. Esto resalta la importancia de disminuir las brechas sociales para garantizar la legitimidad de la democracia. Igualmente resulta fundamental comprender que puede disminuir la relación entre desigualdad social y desigualdad política. 
+
+__Palabras clave: Conocimiento Cívico, Desigualdad política, Comprensión lectora, Interés político__
+
+### Herramientas utilizadas o a utilizar: 
+
+* Zotero: 
+
+* Github:
+
+* Wos:
+
+* OSF
+
+* Google Forms
+
+* R, paquete Metaan
+
+
+
+### Reproductivilidad y documentacion.
+
+The repository of the project in Github is structured according to the [IPO reproducibility protocol](https://juancarloscastillo.github.io/ipo/).
+
+

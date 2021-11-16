@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="Francisco Javier Meneses Rivas (Seminarista)" />
+<meta name="author" content="Juan Carlos Castillo (Profesor Guía)" />
+
+
+<title>¿La desigualdad corroe la participación democrática?:</title>
+
+<script src="site_libs/jquery/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap/css/united.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation/tabsets.js"></script>
+<link href="site_libs/highlightjs/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs/highlight.js"></script>
+<link href="site_libs/font-awesome/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+<style type="text/css">
+  p.abstract{
+    text-align: center;
+    font-weight: bold;
+  }
+  div.abstract{
+    margin: auto;
+    width: 90%;
+  }
+</style>
+
+
+
+<link rel="stylesheet" href="../input/css/custom.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.tab('show');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Metanalisis:desigualdad economica y politica</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="prod_analisis.html">Calculo Metaanalisis</a>
+</li>
+<li>
+  <a href="paper.html">Artículo en línea</a>
+</li>
+<li>
+  <a href="../Presentacion.html">Presentación</a>
+</li>
+<li>
+  <a href="https://github.com/franciscomeneses/Seminario">
+    <span class="fa fa-github fa-lg"></span>
+     
+    
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">¿La desigualdad corroe la participación democrática?:</h1>
+<h3 class="subtitle">Metaanálisis del Efecto de la desigualdad socioeconómica en la desigualdad política.</h3>
+<h4 class="author">Francisco Javier Meneses Rivas (Seminarista)</h4>
+<h4 class="author">Juan Carlos Castillo (Profesor Guía)</h4>
+<div class="abstract">
+<p class="abstract">Abstract</p>
+La legitimidad de la democracia proviene de la participación universal, no obstante, las democracias actuales presentan problemas de participación, y peor aún, problemas de desigualdad en la participación. Autores como Garreton, han señalado que la desigualdad puede corroer las democracias, no obstante, ¿Existe la evidencia suficiente para afirmar que la desigualdad social afecta la participación política haciéndola más desigual? Para responder dicha incógnita el presente estudio realiza un metaanálisis que busque consolidar las distintas evidencias al respecto, para poder determinar la existencia o inexistencia de esta relación. Para ello se ha formulado un código de búsqueda basado en términos del tesauro ELSST, que ha sido aplicado a la plataforma WOS, permitiendo acceder a 181 textos, de los cuales se seleccionaron los 5 cálculos que estudian la relación entre la desigualdad social y la desigualdad política a nivel país, controlando por la riqueza del país. Se utilizo la propuesta de Roberson 2018 para la síntesis de los beta y sus respectivos intervalos de confianza. Para ello se recurrió al paquete Metaan disponible para el software de análisis R en su versión 4.1.1. En general los resultados indican que existe un efecto negativo de la desigualdad económica en la igualdad política, efecto agregado que es significativo. Esto resalta la importancia de disminuir las brechas sociales para garantizar la legitimidad de la democracia. Igualmente resulta fundamental comprender que puede disminuir la relación entre desigualdad social y desigualdad política. . <br> <strong>Palabras clave: Metanalisis, Desigualdad política, Desigualdad economica</strong>
+</div>
+
+</div>
+
+
+<div id="introducción" class="section level1">
+<h1><span class="header-section-number">1</span> Introducción</h1>
+<p>Desde la sociología se ha señalado recurrentemente que la creciente desigualdad social es una amenaza a la mantención y a la calidad de la democracia (). No obstante, no hay un consenso respecto a la veracidad de esta amenaza [], existiendo estudios que señalan este efecto más bien como irrelevante. Resulta fundamental avanzar hacia una idea unificada del perjuicio real que produce la desigualdad en la democracia, puesto que la opinión científica posee un rol importante en la discusión pública, en la cual la desigualdad y sus consecuencias son un tema contingente. Esta es una problemática relevante ya que afecta el derecho a participar de las personas y fomenta estados poco representativos.</p>
+<p>Stockemer, D. (2016) mediante una revisión sistemática llega a la conclusión de que el efecto de la desigualdad dé la proporción de participación no es claro. No obstante, no ve el efecto de la desigualdad en la participación.</p>
+<p>Actualmente múltiples trabajos abordan los efectos de la desigualdad en la participación aludiendo a la teoría de recursos. Según esta perspectiva las personas de menores recursos económicos, académicos y de tiempo tienden a tener una menor participación política que personas con estudios y mejor condición económica []. Desde esta perspectiva se ha evidenciado como la posición social del sujeto influye en sus posibilidades de participación política. Este efecto de los recursos ha sido estudiado en distintos contextos y se ha evidenciado que es más fuerte en sociedades desiguales. En esta línea, muchos estudios demuestran la desigualdad económica agregada de un país influencia en su desigualdad política. Este cambio de enfoque hacia la política comparada puede ser de gran ayuda para comprender el efecto de la desigualdad en la democracia. Anteriores síntesis de investigaciones con discusiones teóricas han destacado la importancia de la desigualdad en la democracia [], aunque hasta ahora no se ha hecho un estudio sistemático al respecto. Por ello, el objetivo de este documento es dar cuenta de un valor más aproximado al real efecto que genera la desigualad económica en la desigualdad política.</p>
+<p>En este trabajo se realiza un metaanálisis de los estudios que investigan el efecto, a nivel país, de la desigualdad económica sobre la desigualdad de la participación. Se utilizará solo trabajos que estudien esta relación desde una perspectiva multivariada, controlando por variables relevantes como el nivel de riqueza. Esto es necesario para evitar confundir el efecto de la desigualdad con el efecto de otras variables macroeconómicas. Así se seleccionarán estudios a nivel país que tengan como dependiente la desigualdad política, la desigualdad económica como independiente y que estén controlados por la riqueza del país. De estos estudios se registrarán los tamaños de efectos, las características de la muestra de países y controles adicionales que utilizarán.</p>
+<p>Se espera que la fuerza de intensidad del efecto de la desigualdad sobre la desigualdad política se vea moderado por la cantidad del número de países y por la inclusión controles de la calidad de la democracia. Se hipotetiza que mientras mayor cantidad de países se incluya mayor será su diversidad, lo cual permitirá una muestra más representativa de las desiguales internacionales. [Características psicométricas de las medidas: podría]</p>
+<p>[ Método (s) de síntesis y, si se utilizó el metanálisis, los métodos específicos utilizados para integrar los estudios (p. Ej., Tamaño del efecto]</p>
+<p>El presente metaanálisis busca medir el efecto de la desigualdad económica sobre la desigualdad política en la consolidación de un beta estandarizado general y su respectivo intervalo de confianza. En metaanálisis es complejo el trabajo con regresiones y parámetros beta, existiendo múltiples opciones al respecto []. En esta ocasión, para calcular un efecto agregado, se utilizó una técnica de ponderación de los betas estandarizados, la cual considera los intervalos de confianza y con ello la potencia de cada estudio. El resultado de este proceso es un beta estandarizado con su respectivo intervalo de confianza, lo cual permite saber la significancia del efecto. Este calculo es realizado con ayuda del paquete Metaan.</p>
+<p>En una versión futura, será necesario incorporar una medida agregada del tamaño del efecto. Sería positivo hacer dicho calculo incorporando distintas propuestas sobre como calcular el mismo, siguiendo los métodos de tal y tal.</p>
+<p>En la versión actual de este metaanálisis no se cuenta con un protocolo para la selección y codificación de los estudios. No obstante, se empezó a diseñar un protocolo aplicable a múltiples codificadores. Se puede acceder a una primera versión de este protocolo mediante el siguiente enlace. El protocolo se ha generado en el formato de encuesta online, para facilitar el trabajo de la codificación y la consolidación de los datos producidos por los diferentes codificadores. Para ello, se utilizo la plataforma de Qualtrics.</p>
+</div>
+<div id="metodo" class="section level1">
+<h1><span class="header-section-number">2</span> Metodo</h1>
+<div id="estrategia-de-busqueda" class="section level2">
+<h2><span class="header-section-number">2.1</span> Estrategia de busqueda:</h2>
+<p>El objetivo de la búsqueda fue localizar investigaciones que cumpliesen con el siguiente conjunto de criterios para ser seleccionada: 1) Trabajos inferenciales, 2) que utilicen países como unidad de análisis, 3) que posean desigualdad política como dependiente, 3) desigualdad económica como independiente y 4) controlen por el nivel de riqueza del país.</p>
+<p>Para localizar textos con estas condiciones se utilizo la plataforma Web of Science. Se genero un código de búsqueda con los términos relevantes, basado en los estudios conocidos sobre el tema. Estos términos de búsqueda fueron enriquecidos por la revisión del tesauro ELSST, del cual se rescató la importancia de agregar antónimos, hipónimos e hiperónimos de los términos. A continuación, se expone el código y los conectores booleanos utilizados para la búsqueda en la plataforma WOS.</p>
+<blockquote>
+<p>AB=(“political inequality”) OR AB=(“political gap”) OR AB=(“political participation”) OR AB=(“PARTICIPATION IN POLITICS”) OR AB=( “POLITICAL CAMPAIGNS” ) OR AB=( “POLITICAL CAMPAIGNS” ) OR AB=(“POLITICAL PROTEST”) OR AB=(“VOTING”) ) AND ( AB=(Inequality) OR AB=(GINI) OR AB=“Social Inequality” OR AB=“Social equality”) AND (ALL=(“countries”) OR ALL=(“country”) OR ALL=“states”) NOT (AB=(“gender”) OR AB=(“women”) OR AB=(“Young”) OR AB=(“race”))</p>
+</blockquote>
+<p>El Código expuesto tiene tres funciones, primero identificar distintos términos utilizados para hablar de desigualdad política y desigualdad en prácticas políticas . En segundo lugar, identifica distintos conceptos asociados a la desigualdad económica. En tercer y último lugar, intenta excluir estudios que refieren a desigualdades políticas que no son desigualdades económicas propiamente, como la desigualdad de genero o de grupos etarios.</p>
+<p>Enlace la búsqueda en el tesaur: <a href="https://elsst.cessda.eu/id/2005dd1d-819c-4329-93cd-b67baad666a1">Desigualdad política</a></p>
+</div>
+<div id="proceso-de-selección" class="section level2">
+<h2><span class="header-section-number">2.2</span> Proceso de selección</h2>
+<p>Como se expone en el siguiente diagrama se obtuvieron 181 artículos mediante el Código de búsqueda. De esos documentos 150 tienen pruebas de inferencia, NN son a nivel país, NN poseen la variable desigualdad política como dependiente, NN incluían la desigualdad económica como independiente y NN tenían los controles adecuados. Hasta ahora, hay 5 estudios seleccionados para el metaanálisis. Esta revisión de literatura se realizó en Octubre del 2021.</p>
+<p><img src="../images/Muestra.png" /></p>
+<p>El proceso de selección de los textos se realizo de modo secuencial aplicando los distintos criterios. En principio, para evaluar si existen pruebas inferenciales se evaluó el texto completo en búsqueda de tablas con pruebas estadísticas, o pruebas estadísticas descritas en el texto. Luego, se reviso en dichas tablas o e metodología cual era el N y cual era la unidad de medida, esperando que fuesen países o países-año.</p>
+<p>En esta oportunidad no se completo el proceso de selección, aunque se logro identificar 5 textos útiles que cumplen con todas las condiciones. Será necesario realizar el proceso completo, incluyendo a codificadores en las distintas etapas del trabajo.</p>
+</div>
+<div id="proceso-de-codificación" class="section level2">
+<h2><span class="header-section-number">2.3</span> Proceso de codificación</h2>
+<p>Actualmente el proceso de codificación incluyo simplemente el registro de los valores necesarios para utilizar el paquete Metaan. Estos corresponden al beta estandarizado de cada estudio y a su respectivo intervalo de confianza. En esta oportunidad la codificación se realizo por un codificador único. Este codificador posee el grado de licenciado en Sociología y es postulante a Master en ciencias sociales.</p>
+<p>HACER PAUTA DE CODIFICACIÓN QUALTRICS.</p>
+</div>
+<div id="método-de-síntesis." class="section level2">
+<h2><span class="header-section-number">2.4</span> Método de síntesis.</h2>
+<p>Trabajar en metanalisis con resultados provenientes de regresiones es aun un tema complejo y en discusión, en lo que respecta a los métodos de síntesis. Una de las alternativas que cuenta con mayor respaldo actualmente es la de Peterson y Brown, no obstante, existen críticas a la herramienta propuesta por estos autores (Philip, Huy, In-Sue e Inddekinge, 2017; Philip, 2018). Las críticas al método tradicional también vienen acompañadas de propuestas, no obstante, ni estas nuevas propuestas ni la forma tradicional entregan herramientas claras y de acceso gratuito para realizar los cálculos que proponen. Por contraparte, la propuesta de <a href="https://link.springer.com/article/10.1007/s00411-020-00863-w">Richardson et al. 2020</a>, posee una herramienta de libre acceso que facilita los cálculos, el paquete de R Metaan. Por esta razón practica se ha decidido trabajar con la propuesta de Richardson para el calculo de un efecto integrado.</p>
+<p>Para la realización de este método integrado, como se mencionó, se trabajo con el software de análisis R en su versión 4.1.1, mediante la interfaz Rstudio. Se trabajo con el paquete Metaan, el cual posee cálculos de efectos agregados basados en la propuesta de Richardson et al. 2020. En particular se utilizo la función estmeta(), probando con efectos fijos y aleatorios. Metaan Descripción del trabajo con metaan Utiliza métodos estadísticos de cálculo de metanálisis como el modelo de efectos fijos y el modelo de efectos aleatorios</p>
+</div>
+</div>
+<div id="resultados" class="section level1">
+<h1><span class="header-section-number">3</span> Resultados</h1>
+<p>Como se menciono pese al trabajo realizado solo se ha logrado localizar 3 artículos que abordan la relación esperada. De ellos, dos de esos artículos entregan más de un cálculo, pues ofrecen distintas operacionalizaciones ya sea para la variable dependiente o independiente. Un articulo entrega dos valores beta, mientras otro entrega tres.<br />
+A continuación, se expone un grafico donde se compara el efecto de las distintas estimaciones, medido en beta estandarizado, con sus respectivos intervalos de confianza. Además, para facilitar la interpretación se ha agregado una línea roja en el 0 que representa un efecto nulo. Como se puede ver en el gráfico, todos los estudios a excepción del de Somma y Bargsted encuentran un efecto significativo, que, además, es negativo.</p>
+<p><img src="../images/Diapositiva3.png" /></p>
+<pre><code>##                                                    
+## Standard meta-analysis with FIXED effect model  
+## -------------------------------------------------- 
+##                                                    
+##    Beta SE-Beta Lower CI Upper CI
+##   -0.04    0.00    -0.04    -0.04
+##                                                    
+## -------------------------- ----------------------- 
+##                                                    
+##             Test of heterogeneity : 
+##                                                    
+##   Cochran Q statistic Degree of Freedom P-Value
+##                305.67              5.00       0
+##                                                    
+## -------------------------------------------------- 
+##                                                    
+##   Higgins and Thompson I^2 (%)
+##                          98.36
+## __________________________________________________ 
+## </code></pre>
+<p>El modelo fijo indica un valor beta único de -0.04 con SE igual a 0. Es probable que este resultado sea producto de la escasa cantidad de artículos analisádos.</p>
+<pre class="r"><code>estmeta(Beta=donne$beta, u=donne$upper_ci, l=donne$lower_ci, test=&quot;RANDOM&quot;)</code></pre>
+<pre><code>##                                                    
+## Standard meta-analysis with RANDOM effect model  
+## -------------------------------------------------- 
+##                                                    
+##    Beta SE-Beta Lower CI Upper CI
+##   -0.06    0.01    -0.09    -0.03
+##                                                    
+## -------------------------- ----------------------- 
+##                                                    
+##             Test of heterogeneity : 
+##                                                    
+##   Cochran Q statistic Degree of Freedom P-Value
+##                305.67              5.00       0
+##                                                    
+## -------------------------------------------------- 
+##                                                    
+##   Higgins and Thompson I^2 (%)
+##                          98.36
+## __________________________________________________ 
+## </code></pre>
+<p>Por su parte la estiamción de modelo aleatorio indica un beta agregado de -0.06 con un SE DE 0.01. Este valor puede ser considerado como significativo ya que el intervalo de confianza no pasa por el 0.</p>
+<p>Cabe destacar que este es un efecto más bien pequeño. Por ello, resulta interesante evaluar que es aquello que determina la fuerza del efecto de la desigualdad. Este es un aspecto en el cual se debe profundizar.</p>
+</div>
+<div id="conclusión" class="section level1">
+<h1><span class="header-section-number">4</span> Conclusión</h1>
+<div id="sintesis" class="section level2">
+<h2><span class="header-section-number">4.1</span> Sintesis</h2>
+</div>
+<div id="limitaciones" class="section level2">
+<h2><span class="header-section-number">4.2</span> Limitaciones</h2>
+<ul>
+<li><p>Faltan estudios</p></li>
+<li><p>Hacer modelo anidado para los mismos estudios</p></li>
+<li><p>Incluir calculo de tamaño de efecto</p></li>
+<li><p>Inlcuir co-codificadores.</p></li>
+<li><p>Preparar pauta de codificación y protocolo en google forms.</p></li>
+</ul>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

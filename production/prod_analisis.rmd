@@ -1,0 +1,59 @@
+---
+title: "Analisis multinivel"
+author: "francisco meneses"
+date: "24-10-2019"
+output: 
+  html_document:
+    css: custom.css
+    theme: united
+---
+
+
+
+```{r}
+#install.packages("devtools") # if you do not have it already
+#devtools::install_github("Package-Metaan-Rep/Metaan")
+
+library(Metaan)
+
+study <- c("Somma & Bargsted (2018)", "Cole (2018) A", "Cole (2018) B", "Houle. (2018) A","Houle. (2018) B","Houle. (2018) C")
+
+beta<- c(0.101, -0.023, -0.032, -0.167,-0.0537, -0.0391)
+lower_ci <- c(0.289, -0.016, -0.025, -0.1822,   -0.06305, -0.04347)
+  upper_ci <- c(-0.087, -0.030,-0.039,-0.1518, -0.04435,-0.0347)
+
+donne <- data.frame(cbind(study, beta, lower_ci, upper_ci))
+
+donne$beta <- as.numeric(as.character(donne$beta))
+donne$upper_ci <- as.numeric(as.character(donne$upper_ci))
+donne$lower_ci <- as.numeric(as.character(donne$lower_ci))
+
+
+estmeta(Beta=donne$beta, u=donne$upper_ci, l=donne$lower_ci, test="RANDOM") 
+estmeta(Beta=donne$beta, u=donne$upper_ci, l=donne$lower_ci, test="FIXED")
+
+
+
+```
+
+
+```{r}
+
+library(ggplot2)
+ggplot(donne, aes(x = study, y =beta)) +
+    geom_line() +
+    geom_errorbar(aes(ymin = lower_ci, ymax = upper_ci), width = .2, colour="grey50") +
+    geom_point(shape = 21, colour = "#5A5858", fill = "white", size = 1.8) +
+   geom_hline(yintercept = 0,
+             color = "red",
+             linetype = "solid") +
+  coord_flip()+  
+  labs(x = "Beta estandarizado",
+         y = "Estudios",
+         title = "Comparación de los efectos") +
+    theme_classic() 
+```
+
+
+
+
